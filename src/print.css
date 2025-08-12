@@ -1,0 +1,25 @@
+@media print {
+    @page {
+        size: 12in 18in;
+        margin: 1in;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #printable-area, #printable-area * {
+        visibility: visible;
+    }
+
+    #printable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .no-print {
+        display: none;
+    }
+}
